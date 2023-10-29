@@ -12,22 +12,13 @@ header {
     background: rgb(0, 0, 0);
 
     height: 200px;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
-    
 }
 header h1 {
     color: aliceblue;
-    
     position: relative;
     top: 15px;
-    transition: all 0.2s ease-in-out;
-    
-}
-header :hover {
-    color: rgb(255,71,0);
-    text-shadow: rgb(255,71,0) 0px 0px 19px;
-    font-size: 100px;
 }
 section.menu {
     height: 60px;
@@ -54,31 +45,9 @@ section.menu ul li :hover {
     font-size: 35px;
 }
 main {
-    padding: 10px;
-    background: rgb(255,71,0);
-    background: linear-gradient(0deg, rgba(255,71,0,1) 0%, rgba(255,179,150,1) 25%, rgba(255,71,0,1) 50%, rgba(255,179,150,1) 75%, rgba(255,71,0,1) 100%);
-}
-main section {
-    height: 800px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 25px;
-    border-radius: 20px;
-}
-main section h1  {
-    font-size: 38px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-radius: 10px;
-
-    text-align: center;
-}
-main section h2 {
-    font-size: 38px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    border-radius: 10px;
-    margin-top: 10px;
+    height: 561px;
+    background-image: url(image.png);
+    background-size:cover;
+    background-position: center;
+    background-position: 50px;
 }
