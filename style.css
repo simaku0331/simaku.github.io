@@ -6,7 +6,7 @@
     font-family: 'Acme', sans-serif;
 }
 * ::selection {
-    color: aqua;
+    color: #ff4700;
 }
 header {
     background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #cccccc 64px), repeating-linear-gradient(#ffffff, #ffffff);
@@ -41,13 +41,213 @@ section.menu ul li a {
     transition: all 0.2s ease-in-out;
 }
 section.menu ul li :hover {
-    color: rgb(255,71,0);
+    color: #ff4700;
     text-shadow: rgb(255,71,0) 0px 0px 19px;
     font-size: 35px;
 }
 main {
-    height: 561px;
+    height: 10000px;
     h1 {
         font-size: 50px;
+
+        margin: 20px;
+
+        padding: 15px;
+
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 5px;
+
+        display: flex;
+        justify-content: center;
+
+        animation-name: rainbow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin: 20px;
+
+        padding: 10px;
+
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 5px;
+
+        display: flex;
+        justify-content: center;
+    }
+    h3 {
+        font-size: 30px;
+        margin: 20px 20px 100px 20px;
+
+        
+    }
+}
+@keyframes rainbow {
+        0%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
+        letter-spacing: 10px;}
+        10%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,140,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,140,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,140,0,1);}
+        20%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,170,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,170,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,170,0,1);}
+        30%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,251,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,251,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,251,0,1);}
+        40%{-webkit-box-shadow:0px 0px 300px 0px rgba(179,255,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(179,255,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(179,255,0,1);}
+        50%{-webkit-box-shadow:0px 0px 300px 0px rgba(26,255,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(26,255,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(26,255,0,1);}
+        60%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,255,200,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,255,200,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,255,200,1);}
+        70%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,187,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,187,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,187,255,1);}
+        80%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,13,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,13,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,13,255,1);}
+        90%{-webkit-box-shadow:0px 0px 300px 0px rgba(149,0,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(149,0,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(149,0,255,1);}
+        100%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,251,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
+        letter-spacing: 10px;}
+    }
+@media (max-width:1250px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Acme', sans-serif;
+    }
+
+    * ::selection {
+        color: #ff4700;
+    }
+
+    header {
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #cccccc 64px), repeating-linear-gradient(#ffffff, #ffffff);
+        background-color: #cccccc;
+        height: 200px;
+        font-size: 6vw; /* 使用vw單位使得字體大小相對於視窗寬度調整 */
+        text-align: center;
+    }
+
+    header h1 {
+        color: rgb(0, 0, 0);
+        position: relative;
+        top: 1.5em; /* 使用em單位來設定相對大小 */
+    }
+
+    section.menu {
+        height: 5vh; /* 使用vh單位使高度相對於視窗高度調整 */
+        background: rgb(0, 0, 0);
+    }
+
+    section.menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section.menu ul li {
+        margin: 1vh 3vw 0.5vh 3vw; /* 使用vw和vh單位來調整間距 */
+    }
+
+    section.menu ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 3vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    section.menu ul li :hover {
+        color: #ff4700;
+        text-shadow: rgb(255,71,0) 0px 0px 1.9vh; /* 使用vh單位調整陰影效果 */
+        font-size: 3.5vw;
+    }
+
+    main {
+        padding: 2vh; /* 使用vh單位調整內邊距 */
+    }
+
+    main h1 {
+        font-size: 5vw;
+        margin: 2vh;
+        padding: 1.5vh;
+        border-style: solid;
+        border-radius: 2vw;
+        border-width: 0.5vw;
+        display: flex;
+        justify-content: center;
+        animation-name: rainbow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    main h2 {
+        font-size: 4vw;
+        margin: 2vh;
+        padding: 1vh;
+        border-style: solid;
+        border-radius: 2vw;
+        border-width: 0.5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    main h3 {
+        font-size: 3vw;
+        margin: 2vh;
+    }
+
+    @keyframes rainbow {
+        0%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
+        letter-spacing: 10px;}
+        10%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,140,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,140,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,140,0,1);}
+        20%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,170,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,170,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,170,0,1);}
+        30%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,251,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,251,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,251,0,1);}
+        40%{-webkit-box-shadow:0px 0px 300px 0px rgba(179,255,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(179,255,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(179,255,0,1);}
+        50%{-webkit-box-shadow:0px 0px 300px 0px rgba(26,255,0,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(26,255,0,1);
+            box-shadow: 0px 0px 300px 0px rgba(26,255,0,1);}
+        60%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,255,200,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,255,200,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,255,200,1);}
+        70%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,187,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,187,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,187,255,1);}
+        80%{-webkit-box-shadow:0px 0px 300px 0px rgba(0,13,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(0,13,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(0,13,255,1);}
+        90%{-webkit-box-shadow:0px 0px 300px 0px rgba(149,0,255,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(149,0,255,1);
+            box-shadow: 0px 0px 300px 0px rgba(149,0,255,1);}
+        100%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,251,1);
+            -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
+            box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
+        letter-spacing: 10px;}
     }
 }
