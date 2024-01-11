@@ -9,21 +9,22 @@
     color: aqua;
 }
 header {
-    background: rgb(0, 0, 0);
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #cccccc 64px), repeating-linear-gradient(#ffffff, #ffffff);
+    background-color: #cccccc;
+
 
     height: 200px;
     font-size: 60px;
     text-align: center;
 }
 header h1 {
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     position: relative;
     top: 15px;
 }
 section.menu {
     height: 60px;
-    background: rgb(255,71,0);
-    background: linear-gradient(0deg, rgba(255,71,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(0, 0, 0);
 }
 section.menu ul {
     list-style: none;
@@ -31,7 +32,7 @@ section.menu ul {
     justify-content:space-around;
 }
 section.menu ul li {
-    margin: 0 30px 5px 30px;
+    margin: 10px 30px 5px 30px;
 }
 section.menu ul li a {
     text-decoration: none;
@@ -46,8 +47,7 @@ section.menu ul li :hover {
 }
 main {
     height: 561px;
-    background-image: url(image.png);
-    background-size:cover;
-    background-position: center;
-    background-position: 50px;
+    h1 {
+        font-size: 50px;
+    }
 }
