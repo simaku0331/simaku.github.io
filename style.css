@@ -187,7 +187,7 @@ img {
     }
 
     main h1 {
-        font-size: 5vw;
+        font-size: 5.5vw;
         margin: 2vh;
         padding: 1.5vh;
         border-style: solid;
@@ -202,7 +202,7 @@ img {
     }
 
     main h2 {
-        font-size: 4vw;
+        font-size: 4.5vw;
         margin: 2vh;
         padding: 1vh;
         border-style: solid;
@@ -213,7 +213,7 @@ img {
     }
 
     main h3 {
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 2vh;
     }
 
