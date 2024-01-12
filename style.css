@@ -8,6 +8,9 @@
 * ::selection {
     color: #ff4700;
 }
+body {
+    background-color: black;
+}
 header {
     background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #cccccc 64px), repeating-linear-gradient(#ffffff, #ffffff);
     background-color: #cccccc;
@@ -46,17 +49,24 @@ section.menu ul li :hover {
     font-size: 35px;
 }
 main {
-    height: 10000px;
+    margin: 0;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #cccccc 10px, #cccccc 20px);
+    background-color: #cacaca;
+    height: auto;
     h1 {
+        position: relative;
+        top: 10px;
+
         font-size: 50px;
 
-        margin: 20px;
+        margin:0px 80px 0 80px;
 
         padding: 15px;
 
         border-style: solid;
         border-radius: 20px;
         border-width: 5px;
+        
 
         display: flex;
         justify-content: center;
@@ -73,21 +83,17 @@ main {
 
         padding: 10px;
 
-        border-style: solid;
-        border-radius: 20px;
-        border-width: 5px;
-
         display: flex;
         justify-content: center;
     }
     h3 {
         font-size: 30px;
-        margin: 20px 20px 100px 20px;
+        margin: 20px 20px 10px 20px;
 
         
     }
 }
-@keyframes rainbow {
+/**@keyframes rainbow {
         0%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,0,1);
             -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
             box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
@@ -123,9 +129,11 @@ main {
             -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
             box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
         letter-spacing: 10px;}
-    }
+    }**/
 img {
-    width: 800px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
     
 }
 @media (max-width:1250px) {
@@ -188,7 +196,7 @@ img {
 
     main h1 {
         font-size: 6vw;
-        margin: 2vh;
+        margin: 0 2vh 2vh 2vh;
         padding: 1.5vh;
         border-style: solid;
         border-radius: 2vw;
@@ -214,10 +222,10 @@ img {
 
     main h3 {
         font-size: 5vw;
-        margin: 2vh;
+        margin: 1vh;
     }
 
-    @keyframes rainbow {
+    /**@keyframes rainbow {
         0%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,0,1);
             -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);
             box-shadow: 0px 0px 300px 0px rgba(255,0,0,1);}
@@ -251,7 +259,7 @@ img {
         100%{-webkit-box-shadow:0px 0px 300px 0px rgba(255,0,251,1);
             -moz-box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);
             box-shadow: 0px 0px 300px 0px rgba(255,0,251,1);}
-    }
+    }**/
     img {
         width: 350px;
         display: flex;
